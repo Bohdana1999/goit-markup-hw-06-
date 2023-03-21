@@ -526,6 +526,7 @@ header {
 }
 .subscribe-form-wrap{
     display: flex;
+    border: #404BBF;
 }
 .subscribe-form-wrap > .input-field{
         width: 264px;
@@ -713,10 +714,12 @@ header {
     padding: 11px 0;
     padding-left: 38px;
     padding-right: 5px;
+    transition: border-color var(--transition-fast) var(--transition-function);
 }
 
 .modal-label>textarea{
     padding: 8px 16px;
+    transition: border-color var(--transition-fast) var(--transition-function);
 }
 
 .modal-label > input:hover + .modal-icon,
@@ -728,7 +731,11 @@ fill:var(--hover-portfolio);
     border-color: var(--hover-portfolio);
     outline: 1px solid transparent;}
 
-
+.modal-label>textarea:hover,
+.modal-label>textarea:focus {
+    border-color: var(--hover-portfolio);
+    outline: 1px solid transparent;
+}
 
 .backdrop {
     position: fixed;
@@ -764,6 +771,8 @@ fill:var(--hover-portfolio);
     background-color: var(--footer-text);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    
+    transition: border-color var(--transition-slow) var(--transition-function);
 }
 
 .modal-btn:hover,
