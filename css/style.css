@@ -117,10 +117,12 @@ textarea{
 /*logo-header*/
 
 header {
+    
     border-bottom: 1px solid #E7E9FC;
 }
 
 .main-header {
+  
     display: flex;
 }
 
